@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'g++ -o PES1UG20CS622 PES1UG20CS622.cpp'
-                sh 'jenkins-cli.jar -s http://localhost:8080/ build PES1UG20CS622-1'
+                sh 'build PES1UG20CS622-1'
             }
         }
 
