@@ -25,7 +25,7 @@ pipeline {
     post {
         always {
             catchError {
-                echo Pipeline succeeded!'
+                echo 'Pipeline succeeded!'
             }
         }
 
