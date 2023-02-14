@@ -23,12 +23,6 @@ pipeline {
     }
 
     post {
-        always {
-            catchError {
-                echo 'Pipeline succeeded!'
-            }
-        }
-
         failure {
             echo 'Pipeline failed!'
         }
